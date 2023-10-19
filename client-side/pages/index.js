@@ -10,6 +10,7 @@ export default function Home() {
   return (
    <>
    <Button colorScheme='green'>Button</Button>
+   <h1>Home page</h1>
    </>
   )
 }
