@@ -8,8 +8,16 @@ body {
   background-color: #f1f1f1;
   font-family: "Poppins", sans-serif;
 }
+
 .contain {
   max-width: 1165px;
   width: 100%;
   margin: 0 auto;
+}
+
+.swiper-button-prev {
+  color: white !important;
+}
+.swiper-button-next {
+  color: white !important;
 }
