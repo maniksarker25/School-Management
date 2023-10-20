@@ -1,6 +1,7 @@
 export const TEACHERS_INFO = [
 	{
 		name: "Danny Awesome",
+		teacherId: "t100",
 		avatar: "https://i.ibb.co/Lvx28dH/Md-Golam-Rakib.jpg",
 		position: "MANAGER",
 		ratting: 5,
@@ -8,9 +9,12 @@ export const TEACHERS_INFO = [
 		twitter: "",
 		linkedIn: "",
 		color: "#F6C25D",
+		description:
+			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
 	},
 	{
 		name: "Kimberly Richiez",
+		teacherId: "t101",
 		avatar: "https://i.ibb.co/pj7Gs7F/logo.png",
 		position: "ENGLISH AND RUSSIAN",
 		ratting: 4.8,
@@ -18,5 +22,59 @@ export const TEACHERS_INFO = [
 		twitter: "",
 		linkedIn: "",
 		color: "#17ADE0",
+		description:
+			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+	},
+	{
+		name: "Kimberly Richiez",
+		teacherId: "t101",
+		avatar: "https://i.ibb.co/pj7Gs7F/logo.png",
+		position: "ENGLISH AND RUSSIAN",
+		ratting: 4.8,
+		facebook: "http:",
+		twitter: "",
+		linkedIn: "",
+		color: "#17ADE0",
+		description:
+			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+	},
+	{
+		name: "Kimberly Richiez",
+		teacherId: "t101",
+		avatar: "https://i.ibb.co/pj7Gs7F/logo.png",
+		position: "ENGLISH AND RUSSIAN",
+		ratting: 4.8,
+		facebook: "http:",
+		twitter: "",
+		linkedIn: "",
+		color: "#17ADE0",
+		description:
+			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+	},
+	{
+		name: "Kimberly Richiez",
+		teacherId: "t101",
+		avatar: "https://i.ibb.co/pj7Gs7F/logo.png",
+		position: "ENGLISH AND RUSSIAN",
+		ratting: 4.8,
+		facebook: "http:",
+		twitter: "",
+		linkedIn: "",
+		color: "#17ADE0",
+		description:
+			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+	},
+	{
+		name: "Kimberly Richiez",
+		teacherId: "t101",
+		avatar: "https://i.ibb.co/pj7Gs7F/logo.png",
+		position: "ENGLISH AND RUSSIAN",
+		ratting: 4.8,
+		facebook: "http:",
+		twitter: "",
+		linkedIn: "",
+		color: "#17ADE0",
+		description:
+			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
 	},
 ];

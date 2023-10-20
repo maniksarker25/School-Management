@@ -1,10 +1,12 @@
 import React from 'react';
 import Banner from '../Banner';
+import SpecialClasses from '../SpecialClasses/SpecialClasses';
 
 const Home = () => {
     return (
         <div>
-           <Banner/>
+            <Banner />
+            <SpecialClasses />
         </div>
     );
 };
