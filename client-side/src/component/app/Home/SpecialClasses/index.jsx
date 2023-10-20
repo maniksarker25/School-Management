@@ -1,0 +1,62 @@
+/** @format */
+
+import React from "react";
+
+import {
+	Grid,
+	GridItem,
+	Tab,
+	TabList,
+	TabPanel,
+	TabPanels,
+	Tabs,
+} from "@chakra-ui/react";
+
+import PageTitle from "@/src/component/share/page-title/PageTitle";
+import ClassCard from "./SpecialClassCard";
+import { SPECIAL_CLASS_INFO } from "@/src/constant/specialClass";
+
+const SpecialClasses = () => {
+	return (
+		<div className='contain'>
+			<PageTitle title={"Our Special Classes"} />
+
+			<Tabs
+				size='md'
+				variant='enclosed'
+				align='center'
+			>
+				<TabList>
+					<Tab>ENGLISH</Tab>
+					<Tab>Popular Teachers</Tab>
+				</TabList>
+				<TabPanels className='mt-3'>
+					<TabPanel p={0}>
+						<Grid
+							templateColumns={[
+								"repeat(1, 1fr)",
+								"repeat(2, 1fr)",
+								"repeat(3, 1fr)",
+								"repeat(4, 1fr)",
+							]}
+							gap='10'
+						>
+							{SPECIAL_CLASS_INFO.map(item => {
+								return (
+									<GridItem key={item.classId}>
+										<ClassCard item={item} />
+									</GridItem>
+								);
+							})}
+						</Grid>
+					</TabPanel>
+					<TabPanel>
+						<p>two!</p>
+					</TabPanel>
+				</TabPanels>
+			</Tabs>
+		</div>
+	);
+};
+
+export default SpecialClasses;

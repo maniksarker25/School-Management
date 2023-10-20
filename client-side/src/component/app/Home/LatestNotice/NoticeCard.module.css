@@ -1,0 +1,13 @@
+.sectionAfter{
+    position: relative;
+}
+.sectionAfter::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background: white;
+    z-index: 100;
+    position: absolute;
+    
+}
