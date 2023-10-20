@@ -11,5 +11,9 @@ export const navItem= [
     {
         name: 'features',
         link: '/features'
+    },
+    {
+        name: 'Latest News',
+        link: '/latest-news'
     }
 ]
