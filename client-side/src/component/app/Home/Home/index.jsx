@@ -6,14 +6,16 @@ import SpecialClasses from "../SpecialClasses/SpecialClasses";
 import FeatureInstructor from "../FeatureInstructor";
 import SchoolInNumber from "../SchoolInNumber/SchoolInNumber";
 
+import Contact from "../Contact";
+
 const Home = () => {
 	return (
-		<div >
+		<div>
 			<Banner />
 			<SpecialClasses />
-
 			<FeatureInstructor />
-			<SchoolInNumber/>
+			<SchoolInNumber />
+			<Contact />
 		</div>
 	);
 };
