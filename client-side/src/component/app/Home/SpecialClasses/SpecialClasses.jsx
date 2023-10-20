@@ -13,6 +13,7 @@ import {
 	Grid,
 	GridItem,
 	Heading,
+	Image,
 	Stack,
 	Tab,
 	TabList,
@@ -23,7 +24,6 @@ import {
 	useMediaQuery,
 } from "@chakra-ui/react";
 import { TEACHERS_INFO } from "@/src/constant/teachers";
-import Image from "next/image";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -33,13 +33,14 @@ import PageTitle from "@/src/component/share/page-title/PageTitle";
 const SpecialClasses = () => {
 	
 	return (
-		<div>
+		<div className="contain">
 			<PageTitle title={"Our Special Classes"} />
 
 			<Tabs
 				size='md'
 				variant='enclosed'
 				align='center'
+				
 			>
 				<TabList>
 					<Tab>ENGLISH</Tab>
@@ -81,8 +82,8 @@ const SpecialClasses = () => {
 												<Box className='py-5 '>
 													<Image
 														src={avatar}
-														width={120}
-														height={120}
+														w={120}
+														h={120}
 														alt='Picture of the author'
 														className='rounded-full'
 													/>
