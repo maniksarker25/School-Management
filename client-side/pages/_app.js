@@ -21,7 +21,7 @@ const theme = extendTheme({
 
 export default function App({ Component, pageProps }) {
   return (
-    <Provider store={store}>
+    <Provider store={store} theme={theme}>
       <ChakraProvider>
         <Layout>
           <Component {...pageProps} />
