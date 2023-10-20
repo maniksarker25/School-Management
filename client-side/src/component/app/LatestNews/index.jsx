@@ -11,10 +11,10 @@ const LatestNews = () => {
             </div>
 
             <div className="contain">
-                <div className='grid grid-cols-3 gap-20 mt-11 mb-11'>
+                <div className='grid md:grid-cols-3 gap-20 mt-11 mb-11'>
 
                     {/* news cards */}
-                    <div className="col-span-2">
+                    <div className="md:col-span-2">
                         {
                             LatestNewsData?.map(news => <LatestNewsCards key={news?.id} news={news} />)
                         }
@@ -25,7 +25,7 @@ const LatestNews = () => {
                     <div className="">
                         <p className="mb-10">CATEGORIES</p>
 
-                        <div className="mb-5">
+                        <div className="mb-5 px-0">
                             <Categories />
                         </div>
                     </div>
