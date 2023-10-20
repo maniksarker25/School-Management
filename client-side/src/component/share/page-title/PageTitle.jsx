@@ -1,10 +1,10 @@
 import React from 'react';
 
-const PageTitle = () => {
+const PageTitle = ({title}) => {
     return (
 		<div>
 			<h4 className='py-8 text-center text-3xl text-[#A0AEC0]'>
-				Choose Your Language
+				{title}
 			</h4>
 		</div>
 	);
