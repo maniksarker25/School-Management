@@ -12,22 +12,21 @@ const theme = extendTheme({
     lg: "1024px",
     xl: "1280px",
   },
-  color:{
-    primaryColor:{
-      900: '#01A2A6'
-    }
-  }
-})
-
+  color: {
+    primaryColor: {
+      900: "#01A2A6",
+    },
+  },
+});
 
 export default function App({ Component, pageProps }) {
   return (
-		<Provider store={store}>
-			<ChakraProvider>
-				<Layout>
-					<Component {...pageProps} />
-				</Layout>
-			</ChakraProvider>
-		</Provider>
+    <Provider store={store}>
+      <ChakraProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ChakraProvider>
+    </Provider>
   );
 }
