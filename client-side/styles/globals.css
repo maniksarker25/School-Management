@@ -13,3 +13,10 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+.swiper-button-prev {
+  color: white !important;
+}
+.swiper-button-next {
+  color: white !important;
+}
