@@ -17,6 +17,9 @@ const theme = extendTheme({
       900: "#01A2A6",
     },
   },
+  space:{
+    1: '70px'
+  }
 });
 
 export default function App({ Component, pageProps }) {

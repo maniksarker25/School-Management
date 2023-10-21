@@ -5,7 +5,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EditLocationIcon from '@mui/icons-material/EditLocation';
 const Footer = () => {
     return (
-        <div className="bg-[#3D3D47] py-5">
+        <Box mt='70px' className="bg-[#3D3D47] py-5">
             <Flex flexWrap='wrap' direction={["column", "row", "row"]} className=" contain "  justifyContent='space-between' >
                 <Box flexBasis={["100%", "50%", "25%"]} padding={['15px','15px','20px']}>
                     <Link as={NextLink} color='white' fontSize='2xl' style={{ textDecoration: 'none' }} href="/">School</Link>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </Box>
 
             </Flex>
-        </div>
+        </Box>
     );
 };
 
