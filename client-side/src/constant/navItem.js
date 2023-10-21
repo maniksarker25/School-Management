@@ -5,11 +5,11 @@ export const navItem= [
         link: '/'
     },
     {
-        name: 'courses',
+        name: 'Courses',
         link: '/courses'
     },
     {
-        name: 'features',
+        name: 'Features',
         link: '/features'
     },
     {
