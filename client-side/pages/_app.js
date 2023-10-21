@@ -20,6 +20,21 @@ const theme = extendTheme({
 			900: "#F36371",
 		},
 	},
+  breakpoints: {
+    base: "320px",
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+  },
+  color: {
+    primaryColor: {
+      900: "#01A2A6",
+    },
+  },
+  space:{
+    1: '70px'
+  }
 });
 
 export default function App({ Component, pageProps }) {

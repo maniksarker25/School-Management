@@ -1,0 +1,15 @@
+.cardAfter {
+  position: relative;
+}
+
+.cardAfter::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #01A2A6;
+border-left: 2px solid #01A2A6;
+  transform: rotate(45deg);
+  background: white;
+  z-index: 100;
+  position: absolute;
+}

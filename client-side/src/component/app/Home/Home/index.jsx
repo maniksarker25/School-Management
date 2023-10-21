@@ -2,30 +2,30 @@
 
 import React from "react";
 import Banner from "../Banner";
-
-import FeatureInstructor from "../FeatureInstructor";
 import SpecialClasses from "../SpecialClasses";
-
-import SchoolInNumber from "../SchoolInNumber/SchoolInNumber";
-
-import Contact from "../Contact";
 import OurFacilities from "../OurFacilities";
 import LatestNews from "../LatestNews";
 import NoticeEvents from "../NoticeEvents";
+import FeatureInstructor from "../FeatureInstructor";
+import SchoolInNumber from "../SchoolInNumber/SchoolInNumber";
+import Testimonial from "../Testimonial";
+import Contact from "../Contact";
+
 
 const Home = () => {
-  return (
+	return (
 		<div>
 			<Banner />
 			<SpecialClasses />
 			<OurFacilities />
-		  <LatestNews />
-		  <NoticeEvents />
+			<LatestNews />
+			<NoticeEvents />
 			<FeatureInstructor />
 			<SchoolInNumber />
+			<Testimonial />
 			<Contact />
 		</div>
-  );
+	);
 };
 
 export default Home;
