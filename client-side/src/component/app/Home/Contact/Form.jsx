@@ -23,11 +23,7 @@ const Form = () => {
           />
         </div>
         <div className="mt-10 flex gap-3">
-          {/* <input
-            type="text"
-            placeholder="Message"
-            className="bg-transparent  border rounded-3xl py-1.5 ps-3 outline-none w-full placeholder:text-white"
-          /> */}
+          
           <textarea 
           placeholder="Message"
           className="bg-transparent  border rounded-xl py-1.5 ps-3 outline-none w-full placeholder:text-white"
