@@ -4,6 +4,8 @@ import { Provider } from "react-redux";
 import "@/styles/globals.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { store } from "@/src/redux/store"; 
+import DashboardLayout from "@/src/component/core/layout/DashboardLayout";
+import { useRouter } from "next/router";
 const theme = extendTheme({
 	breakpoints: {
 		base: "320px",
@@ -38,13 +40,23 @@ const theme = extendTheme({
 });
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter()
+  const auth = true
   return (
-		<Provider store={store}>
-			<ChakraProvider theme={theme}>
-				<Layout>
-					<Component {...pageProps} />
-				</Layout>
-			</ChakraProvider>
-		</Provider>
+    <Provider store={store} theme={theme}>
+      <ChakraProvider>
+        {
+          router.pathname === '/dashboard' && auth ? (<DashboardLayout>
+            <Component {...pageProps} />
+          </DashboardLayout>): (
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          )
+        }
+        
+      </ChakraProvider>
+    </Provider>
+		
   );
 }
