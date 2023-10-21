@@ -12,7 +12,7 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const BannerSlider = () => {
   return (
-    <div>
+    <div className="banner">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
