@@ -11,5 +11,13 @@ export const navItem= [
     {
         name: 'features',
         link: '/features'
+    },
+    {
+        name:"About Us",
+        link:"/about-us"
+    },
+    {
+        name:"Contact",
+        link:"/contact-us"
     }
 ]

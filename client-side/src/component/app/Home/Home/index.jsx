@@ -10,6 +10,7 @@ import SchoolInNumber from "../SchoolInNumber/SchoolInNumber";
 
 import Contact from "../Contact";
 import OurFacilities from "../OurFacilities";
+import Testimonial from "../../Testimonial";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <LatestNotice />
       <FeatureInstructor />
       <SchoolInNumber />
+      <Testimonial/>
       <Contact />
     </div>
   );
