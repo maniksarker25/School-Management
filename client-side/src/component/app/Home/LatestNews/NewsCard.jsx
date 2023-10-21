@@ -2,10 +2,9 @@
 
 import { Box, Card, CardBody, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import { sectionAfter } from "./NoticeCard.module.css";
-const NoticeCard = ({ notice, index }) => {
-	
-	const { noticeId, title, image, description, date, textPosition } = notice;
+import { sectionAfter } from "./NewsCard.module.css";
+const NewsCard = ({ item, index }) => {
+	const { noticeId, title, image, description, date, textPosition } = item;
 	return (
 		<Card
 			maxW='sm'
@@ -16,7 +15,7 @@ const NoticeCard = ({ notice, index }) => {
 				p={0}
 				display={"flex"}
 				flexDirection={"column"}
-				className="group"
+				className='group'
 			>
 				{/* image  */}
 				<Box
@@ -24,9 +23,7 @@ const NoticeCard = ({ notice, index }) => {
 						index % 2 === 0 ? "order-1" : "order-2"
 					} w-full cursor-pointer relative`}
 				>
-					<div className="w-full h-full bg-[#000000] absolute opacity-0 group-hover:opacity-40 duration-500">
-
-					</div>
+					<div className='w-full h-full bg-[#000000] absolute opacity-0 group-hover:opacity-40 duration-500'></div>
 					<Image
 						src={image}
 						width={300} // Specify the width in pixels
@@ -62,4 +59,4 @@ const NoticeCard = ({ notice, index }) => {
 	);
 };
 
-export default NoticeCard;
+export default NewsCard;
