@@ -5,11 +5,19 @@ export const navItem= [
         link: '/'
     },
     {
-        name: 'courses',
+        name: 'Courses',
         link: '/courses'
     },
     {
-        name: 'features',
+        name: 'Features',
         link: '/features'
+    },
+    {
+        name:"About Us",
+        link:"/about-us"
+    },
+    {
+        name:"Contact",
+        link:"/contact-us"
     }
 ]

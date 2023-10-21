@@ -3,11 +3,25 @@ import Layout from "@/src/component/core/layout/Layout";
 import { Provider } from "react-redux";
 import "@/styles/globals.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import { store } from "@/src/redux/store";
-import { useRouter } from "next/router";
+import { store } from "@/src/redux/store"; 
 import DashboardLayout from "@/src/component/core/layout/DashboardLayout";
-import Dashboard from "./dashboard";
+import { useRouter } from "next/router";
 const theme = extendTheme({
+	breakpoints: {
+		base: "320px",
+		sm: "640px",
+		md: "768px",
+		lg: "1024px",
+		xl: "1280px",
+	},
+	colors: {
+		primaryColor: {
+			900: "#01A2A6",
+		},
+		secondaryColor: {
+			900: "#F36371",
+		},
+	},
   breakpoints: {
     base: "320px",
     sm: "640px",
@@ -43,5 +57,6 @@ export default function App({ Component, pageProps }) {
         
       </ChakraProvider>
     </Provider>
+		
   );
 }

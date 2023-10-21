@@ -14,10 +14,32 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.bg-primary{
+  background-color: rgb(1,162,166);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+.banner:hover .swiper-button-prev,
+.swiper-button-next {
+  display: block !important;
+  transition: all ease-in-out 2s;
+  -webkit-transition: all ease-in-out 2s;
+  -moz-transition: all ease-in-out 2s;
+  -ms-transition: all ease-in-out 2s;
+  -o-transition: all ease-in-out 2s;
+}
 
 .swiper-button-prev {
   color: white !important;
 }
 .swiper-button-next {
   color: white !important;
+}
+.swiper-button-prev:after {
+  font-size: 30px !important;
+}
+.swiper-button-next:after {
+  font-size: 30px !important;
 }
