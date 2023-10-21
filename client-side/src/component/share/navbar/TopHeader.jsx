@@ -8,7 +8,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const TopHeader = () => {
     return (
-        <div className='flex justify-between pt-5' >
+        <Box display={['none','none','flex']} className=' justify-between pt-5' >
             <Box color={'gray.400'} display={'flex'} gap={3}>
                 <Text fontSize={12} > <EditLocationIcon/> Brooklyn, NY 10036, United States</Text>
                 <Text fontSize={12} > <PhoneIphoneIcon/> +01214784</Text>
@@ -21,7 +21,7 @@ const TopHeader = () => {
                <Link href=''>  <Icon as={InstagramIcon} color={'gray.400'}/></Link>
                 
             </Box>
-        </div>
+        </Box>
     );
 };
 

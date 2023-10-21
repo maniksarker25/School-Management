@@ -2,10 +2,11 @@ import React from 'react';
 import SchoolNews from './SchoolNews';
 import OpeningHour from './OpeningHour';
 import Form from './Form';
+import { Box } from '@chakra-ui/react';
 
 const Contact = () => {
     return (
-        <div className='mb-16'>
+        <Box mt='70px' >
             <div className='lg:flex  contain lg:h-[250px]'>
                 <div className='lg:w-1/2 md:flex'>
                 <SchoolNews/>
@@ -16,7 +17,7 @@ const Contact = () => {
                </div>
             </div>
             
-        </div>
+        </Box>
     );
 };
 

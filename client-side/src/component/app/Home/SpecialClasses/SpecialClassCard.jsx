@@ -4,22 +4,12 @@ import React from "react";
 
 import { Box, Card, CardBody, Heading, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Link from "next/link";
 import Rating from "react-rating";
 import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
-import StarHalfIcon from "@mui/icons-material/StarHalf";
+
 const ClassCard = ({ item }) => {
-	const {
-		avatar,
-		name,
-ratting,
-		price,
-		twitter,
-	} = item || {};
+	const { avatar, name, ratting, price, twitter } = item || {};
 	return (
 		<Card
 			maxW='sm'
@@ -60,7 +50,7 @@ ratting,
 							{/* ratting */}
 							<Box className='text-[12px]'>
 								<Rating
-									className="text-yellow-500"
+									className='text-yellow-500'
 									readonly
 									placeholderRating={ratting}
 									emptySymbol={
@@ -91,7 +81,7 @@ ratting,
 								}`}
 								borderRadius={"30"}
 								color={"white"}
-								fontSize={'14px'}
+								fontSize={"14px"}
 							>
 								{price}
 							</Box>
