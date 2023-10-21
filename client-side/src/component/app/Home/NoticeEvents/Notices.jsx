@@ -26,7 +26,7 @@ const Notices = () => {
 				{NOTICE_INFO.map(item => <NoticeItem key={item.id} item={item } />)}
 			</Box>
 
-			<Box className='mt-auto text-center '>
+			<Box className='mt-8  md:mt-auto text-center '>
 				<BigBtn />
 			</Box>
 		</Box>
