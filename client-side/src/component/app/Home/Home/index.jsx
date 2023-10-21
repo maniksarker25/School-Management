@@ -9,19 +9,20 @@ import LatestNotice from "../LatestNotice";
 import SchoolInNumber from "../SchoolInNumber/SchoolInNumber";
 
 import Contact from "../Contact";
+import OurFacilities from "../OurFacilities";
 
 const Home = () => {
-	return (
-		<div>
-			<Banner />
-			<SpecialClasses />
-
-			<LatestNotice />
-			<FeatureInstructor />
-			<SchoolInNumber />
-			<Contact />
-		</div>
-	);
+  return (
+    <div>
+      <Banner />
+      <SpecialClasses />
+      <OurFacilities/>
+      <LatestNotice />
+      <FeatureInstructor />
+      <SchoolInNumber />
+      <Contact />
+    </div>
+  );
 };
 
 export default Home;
