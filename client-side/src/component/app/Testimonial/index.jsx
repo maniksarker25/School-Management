@@ -18,7 +18,7 @@ const Testimonial = () => {
       <div className="contain">
         {" "}
         <PageTitle title={"Our Happy Guardian"} />
-        <div className="mt-12">
+        <div className="mt-12 mb-28">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
