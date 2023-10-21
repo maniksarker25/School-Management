@@ -1,5 +1,5 @@
 import React from "react";
-import PageTitle from "../../share/page-title/PageTitle";
+import PageTitle from "../../../share/page-title/PageTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
