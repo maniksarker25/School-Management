@@ -4,7 +4,7 @@ import { Box, Card, CardBody, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { sectionAfter } from "./NoticeCard.module.css";
 const NoticeCard = ({ notice, index }) => {
-	console.log(index)
+	
 	const { noticeId, title, image, description, date, textPosition } = notice;
 	return (
 		<Card
