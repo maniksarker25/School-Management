@@ -8,7 +8,6 @@ const BottomHeader = () => {
     const router = useRouter()
     const { isOpen, onOpen, onClose } = useDisclosure()
     const handleClick = () => {
-
         onOpen()
     }
     return (
