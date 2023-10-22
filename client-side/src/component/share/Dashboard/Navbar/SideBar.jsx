@@ -8,50 +8,63 @@ import {
 	DrawerContent,
 	DrawerHeader,
 	DrawerOverlay,
+	Icon,
+	Text,
 } from "@chakra-ui/react";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const SideBar = ({ isOpen, onClose }) => {
 	const [expand, setExpand] = useState(-1);
 	const userRole = "admin";
+	
+	  const handleButtonClick = (index) => {
+		// Refresh AOS
+		setExpand(index)
+		
+	  }
 	return (
 		<Drawer
 			placement={"left"}
-			size='xs'
-			onClose={onClose}
+			
 			isOpen={isOpen}
+			isResizable={false}
+			
 		>
-			<DrawerOverlay />
-			<DrawerContent>
-				<DrawerCloseButton
+			<DrawerOverlay display={'none'}/>
+			<DrawerContent style={{ width:'250px',zIndex:'0'}}>
+				{/* <
 					cursor={"pointer"}
 					as={ChevronLeftIcon}
-				/>
+					onClick={()isOpen}
+				/> */}
+				<Icon  as={ChevronLeftIcon} onClick={onClose}/>
 				<DrawerHeader borderBottomWidth='1px'>
 					Basic Drawer
 				</DrawerHeader>
 				<DrawerBody>
-					<ul className=' w-full '>
+					<ul className=' w-8/12 flex flex-col gap-y-3 '>
 						{userRole === "admin" &&
 							sidebar?.admin?.map((item, index) => (
-								<li key={index}>
-									{item.title}{" "}
+								<li key={index} className=" text-lg font-bold capitalize items-c  transition-all duration-500">
+									<div className="flex enter justify-between">
+									{item?.link ? <Link href={item.link}>{item.title}</Link> : <Text display='inline'>{item.title}</Text>}
 									{item.data && expand !== index ? (
-										<ChevronRightIcon
+										<Icon  as={ChevronRightIcon}
 											className='cursor-pointer'
-											onClick={() => setExpand(index)}
+											onClick={()=> handleButtonClick(index)}
+											fontSize={30}
 										/>
-									) : (
-										<ExpandMoreIcon
-											className='cursor-pointer'
-											onClick={() => setExpand(-1)}
-										/>
-									)}
+									) : item.data ? (
+										<Icon as={ExpandMoreIcon}  cursor='pointer' fontSize={30} onClick={() => setExpand(-1)}/>
+										
+									) : ''
+									}
+									</div>
 									{expand === index && (
-										<ul className=' flex gap-y-3 text-justify ms-auto py-5 flex-col w-10/12 '>
+										<ul  className={` ${ expand === index? '': ' ' }  relative left-5    flex gap-y-3 text-justify   py-5 flex-col`}>
 											{item.data.map((item, index) => (
 												<li
 													key={index}

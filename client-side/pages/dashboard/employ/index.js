@@ -3,7 +3,9 @@ import React from 'react';
 const index = () => {
     return (
         <div>
-            this is Employ index file all done
+            <button className='m-10'>fuyerhuifchdfuich</button>
+
+           
         </div>
     );
 };

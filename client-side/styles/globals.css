@@ -14,8 +14,8 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.bg-primary{
-  background-color: rgb(1,162,166);
+.bg-primary {
+  background-color: rgb(1, 162, 166);
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -42,4 +42,7 @@ body {
 }
 .swiper-button-next:after {
   font-size: 30px !important;
+}
+.css-17pwl6t {
+  width: 0 !important;
 }
