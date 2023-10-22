@@ -3,7 +3,7 @@
 export const SPECIAL_CLASS_INFO = [
 	{
 		name: "ENGLISH FOR CHILDREN",
-		classId: "t100",
+		classId: "s_c_101",
 		price: "free",
 		avatar: "https://language-school.cmsmasters.net/wp-content/uploads/2015/12/Depositphotos_63889211_original-300x300.jpg",
 
@@ -14,7 +14,7 @@ export const SPECIAL_CLASS_INFO = [
 	},
 	{
 		name: "ENGLISH FOR CHILDREN",
-		classId: "t101",
+		classId: "s_c_102",
 		price: 35.5,
 		avatar: "https://language-school.cmsmasters.net/wp-content/uploads/2015/08/Depositphotos_46326837_original-580x580.jpg",
 
@@ -22,7 +22,7 @@ export const SPECIAL_CLASS_INFO = [
 	},
 	{
 		name: "ENGLISH FOR CHILDREN",
-		classId: "t101",
+		classId: "s_c_103",
 		price: 35.5,
 		avatar: "https://language-school.cmsmasters.net/wp-content/uploads/2015/08/Depositphotos_46326837_original-580x580.jpg",
 
@@ -30,7 +30,7 @@ export const SPECIAL_CLASS_INFO = [
 	},
 	{
 		name: "ENGLISH FOR CHILDREN",
-		classId: "t101",
+		classId: "s_c_104",
 		price: "free",
 		avatar: "https://language-school.cmsmasters.net/wp-content/uploads/2015/08/Depositphotos_46326837_original-580x580.jpg",
 

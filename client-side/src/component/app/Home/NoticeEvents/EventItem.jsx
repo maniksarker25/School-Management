@@ -3,21 +3,24 @@
 import ReadMoreBtn from "@/src/component/share/UI/ReadMoreBtn";
 import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const EventItem = ({ item }) => {
-	const { title, image, publishAt } = item;
+	const {id, title, image, publishAt } = item || {};
 	return (
 		<GridItem
 			colSpan={1}
 			className=' bg-[#EEEEEE]'
+			display={"flex"}
+			flexDirection={"column"}
 		>
 			{/* image  */}
-			<Box height={'235px'}>
+			<Box height={"235px"}>
 				<img
 					src={image}
 					alt={title}
-					className="h-full object-fill w-full"
+					className='h-full object-fill w-full'
 				/>
 			</Box>
 
@@ -60,10 +63,13 @@ const EventItem = ({ item }) => {
 
 			{/* Read more butn  */}
 			<Box
+				className='mt-auto'
 				py={6}
 				textAlign={"center"}
 			>
-				<ReadMoreBtn />
+				<Link href={`/events/${title}/${id}`}>
+					<ReadMoreBtn />
+				</Link>
 			</Box>
 		</GridItem>
 	);
