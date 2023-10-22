@@ -28,16 +28,19 @@ const SideBar = ({ isOpen, onClose }) => {
 	return (
 		<Drawer
 			placement={"left"}
-			size='xs'
-			onClose={onClose}
+			
 			isOpen={isOpen}
+			isResizable={false}
+			
 		>
-			{/* <DrawerOverlay /> */}
-			<DrawerContent>
-				<DrawerCloseButton
+			<DrawerOverlay display={'none'}/>
+			<DrawerContent style={{ width:'250px',zIndex:'0'}}>
+				{/* <
 					cursor={"pointer"}
 					as={ChevronLeftIcon}
-				/>
+					onClick={()isOpen}
+				/> */}
+				<Icon  as={ChevronLeftIcon} onClick={onClose}/>
 				<DrawerHeader borderBottomWidth='1px'>
 					Basic Drawer
 				</DrawerHeader>
@@ -61,7 +64,7 @@ const SideBar = ({ isOpen, onClose }) => {
 									}
 									</div>
 									{expand === index && (
-										<ul  className={` ${ expand === index? '': ' ' }  relative left-5    flex gap-y-3 text-justify  py-5 flex-col`}>
+										<ul  className={` ${ expand === index? '': ' ' }  relative left-5    flex gap-y-3 text-justify   py-5 flex-col`}>
 											{item.data.map((item, index) => (
 												<li
 													key={index}
