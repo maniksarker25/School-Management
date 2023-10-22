@@ -7,29 +7,32 @@ const NewsCard = ({ item, index }) => {
 	const { noticeId, title, image, description, date, textPosition } = item;
 	return (
 		<Card
-			maxW='sm'
+			
 			h={"100%"}
-			className='border border-gray-200  rounded-none'
+			className='border border-gray-200  rounded-none '
 		>
 			<CardBody
 				p={0}
 				display={"flex"}
 				flexDirection={"column"}
 				className='group'
+				width={'100%'}
+				
 			>
 				{/* image  */}
 				<Box
 					className={`${
 						index % 2 === 0 ? "order-1" : "order-2"
-					} w-full cursor-pointer relative`}
+					} w-full cursor-pointer relative `}
 				>
 					<div className='w-full h-full bg-[#000000] absolute opacity-0 group-hover:opacity-40 duration-500'></div>
-					<Image
-						src={image}
-						width={300} // Specify the width in pixels
-						height={280} // Specify the height in pixels
-						alt='Picture of the author'
-					/>
+					<Box className="">
+						<img
+							className="w-full "
+							src={image}
+							alt='Picture of the author'
+						/>
+					</Box>
 				</Box>
 
 				{/* text  */}
