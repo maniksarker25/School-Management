@@ -15,9 +15,11 @@ const NoticeItem = ({ item }) => {
 			borderBottom={"1px"}
 			borderColor={"#eeeeee"}
 		>
-			<p className='text-[14px] font-bold cursor-pointer hover:text-[#01A2A6] duration-500'>
-				{title}
-			</p>
+			<Link href={`/notices/${title}/${id}`}>
+				<p className='text-[14px] font-bold cursor-pointer hover:text-[#01A2A6] duration-500'>
+					{title}
+				</p>
+			</Link>
 			<p className='text-[14px]'>Published: {publishAt}</p>
 			<Link href={`/notices/${title}/${id}`}>
 				<ReadMoreBtn />

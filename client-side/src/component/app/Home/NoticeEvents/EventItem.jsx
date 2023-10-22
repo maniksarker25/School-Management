@@ -49,14 +49,16 @@ const EventItem = ({ item }) => {
 
 					{/* event title  */}
 					<GridItem colSpan={2}>
-						<Text
-							fontSize={"16"}
-							cursor={"pointer"}
-							lineHeight={"18px"}
-							className='hover:text-[#01A2A6] duration-200'
-						>
-							{title}
-						</Text>
+						<Link href={`/events/${title}/${id}`}>
+							<Text
+								fontSize={"16"}
+								cursor={"pointer"}
+								lineHeight={"18px"}
+								className='hover:text-[#01A2A6] duration-200'
+							>
+								{title}
+							</Text>
+						</Link>
 					</GridItem>
 				</Grid>
 			</Box>
