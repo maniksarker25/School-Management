@@ -16,14 +16,15 @@ const NoticeEvents = () => {
 			<Box className='contain'>
 				<Grid
 					templateColumns={{
-						base: "repeat(2, 1fr)",
+						base: "repeat(1, 1fr)",
 						md: "repeat(3, 1fr)",
 					}}
-					gap={8}
+					columnGap={{ base: 0, sm: 8, md: 8 }}
+					rowGap={{ base: 8 }}
 				>
 					{/* events  */}
 					<GridItem
-						colSpan={2}
+						colSpan={[1, 2]}
 						className=''
 					>
 						{/* title  */}
@@ -32,7 +33,7 @@ const NoticeEvents = () => {
 						</Box>
 						<Events data={EVENTS_INFO.slice(0, 2)} />
 						<Box className='mt-8 text-center'>
-							<Link href={'/events'}>
+							<Link href={"/events"}>
 								<BigBtn title={"View All Events"} />
 							</Link>
 						</Box>
@@ -40,7 +41,7 @@ const NoticeEvents = () => {
 
 					{/* notices  */}
 					<GridItem
-						colSpan={[2, 1]}
+						colSpan={1}
 						className=''
 					>
 						<Box mb={6}>
