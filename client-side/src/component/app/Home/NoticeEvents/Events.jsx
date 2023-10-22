@@ -23,12 +23,15 @@ const Events = () => {
 				gap={5}
 			>
 				{EVENTS_INFO.slice(0, 2).map(item => (
-					<EventItem key={item.id} item={ item} />
+					<EventItem
+						key={item.id}
+						item={item}
+					/>
 				))}
 			</Grid>
 
 			<Box className='mt-8 text-center'>
-				<BigBtn />
+				<BigBtn title={"View All Events"} />
 			</Box>
 		</Box>
 	);

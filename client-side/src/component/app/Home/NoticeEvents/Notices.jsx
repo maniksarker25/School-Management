@@ -23,11 +23,16 @@ const Notices = () => {
 				className='shadow-[0_0_1px_2px_#eeeeee] rounded overflow-y-auto'
 				h={"468px"}
 			>
-				{NOTICE_INFO.map(item => <NoticeItem key={item.id} item={item } />)}
+				{NOTICE_INFO.map(item => (
+					<NoticeItem
+						key={item.id}
+						item={item}
+					/>
+				))}
 			</Box>
 
 			<Box className='mt-8  md:mt-auto text-center '>
-				<BigBtn />
+				<BigBtn title={"View All Notice"} />
 			</Box>
 		</Box>
 	);

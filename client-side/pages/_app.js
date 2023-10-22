@@ -40,23 +40,27 @@ const theme = extendTheme({
 });
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter()
+	const router = useRouter();
+	const isDashboard = router.asPath.startsWith("/dashboard");
+
   const auth = true
   return (
-    <Provider store={store} theme={theme}>
-      <ChakraProvider>
-        {
-          router.pathname === '/dashboard' && auth ? (<DashboardLayout>
-            <Component {...pageProps} />
-          </DashboardLayout>): (
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
-          )
-        }
-        
-      </ChakraProvider>
-    </Provider>
-		
+		<Provider
+			store={store}
+			theme={theme}
+		>
+			<ChakraProvider>
+				{isDashboard && auth ? (
+					<DashboardLayout>
+						<Component {...pageProps} />
+					</DashboardLayout>
+				) : (
+					<Layout>
+						<Component {...pageProps} />
+					</Layout>
+				)}
+				
+			</ChakraProvider>
+		</Provider>
   );
 }
