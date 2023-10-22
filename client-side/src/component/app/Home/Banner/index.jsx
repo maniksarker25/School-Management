@@ -6,7 +6,9 @@ const Banner = () => {
     return (
         <div className='mt-4'>
           <BannerSlider/>
+          <div className='hidden md:block'>
           <BannerBottom/>
+          </div>
         </div>
     );
 };
