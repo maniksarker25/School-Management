@@ -2,31 +2,32 @@ export const sidebar = {
   admin: [
     {
       title: "employ",
-      data:[
-        {
-            title: 'All Employ',
-            link: '/dashboard/employ'
-        },
-        {
-            title: 'Add Employ',
-            link: '/add-emplopy'
-        },
-        
-      ]
+      link: '/dashboard/employ'
     },
     {
       title: "student",
+      link: '/all-student'
+    },
+    {
+      title: 'event',
       data:[
         {
-            title: 'All Student',
-            link: '/all-student'
+          title: 'Add Event',
+          link: '/add-event'
         },
         {
-            title: 'Add Student',
-            link: '/add-student'
+          title: 'Manage Event',
+          link: '/manage-event'
         },
         
       ]
+    },{
+      title: "employ",
+      link: '/dashboard/employ'
+    },
+    {
+      title: "student",
+      link: '/all-student'
     },
   ],
 };
