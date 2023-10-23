@@ -1,9 +1,10 @@
 /** @format */
 
 import DashboardPageTitle from "@/src/component/share/Dashboard/DashboardPageTitle/DashboardPageTitle";
-import { Box } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
 import React from "react";
-
+import SaveAsIcon from '@mui/icons-material/SaveAs';
+import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 const index = () => {
 	return (
 		<div>
@@ -11,7 +12,19 @@ const index = () => {
 				<DashboardPageTitle title={"Events"} />
 			</Box>
 			<Box p={4}>
-				<Box bg={"white"}>this is box</Box>
+				<Box
+					bg={"white"}
+					p={4}
+				>
+					<Stack
+						display={"flex"}
+						flexDirection={"row"}
+						className='text-[14px]'
+					>
+						<Box className='cursor-pointer flex items-center gap-1' ><FormatListBulletedIcon className="text-[16px]"/> Create Event</Box>
+						<Box className='cursor-pointer flex items-center gap-1' ><SaveAsIcon className="text-[16px]"/> Create Event</Box>
+					</Stack>
+				</Box>
 			</Box>
 		</div>
 	);
