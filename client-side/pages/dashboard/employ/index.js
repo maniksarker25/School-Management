@@ -3,7 +3,7 @@ import React from 'react';
 const index = () => {
     return (
         <div>
-            this is Employ index file all done
+            <p>lorem10000</p>
         </div>
     );
 };

@@ -26,7 +26,7 @@ const BottomHeader = () => {
         School{" "}
       </Link>
 
-      <Box display={["none", "none","none", "flex"]} gap={3}>
+      <Box display={{ base:'none',lg:'flex'}} gap={3}>
         {navItem.map((item, index) => (
           <Link
             className={`text-lg transition-all duration-300 hover:text-[#64A2A6] ${
@@ -42,7 +42,7 @@ const BottomHeader = () => {
         ))}
       </Box>
       <Icon
-        display={["block", "block", "none"]}
+        display={["block", 'block', "block", "none"]}
         onClick={handleClick}
         cursor="pointer"
         fontSize={30}
