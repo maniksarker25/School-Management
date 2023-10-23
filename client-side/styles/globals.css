@@ -7,88 +7,86 @@
 
 html,
 body {
-	background-color: #f1f1f1;
-	font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
 }
 
 .contain {
-	max-width: 1165px;
-	width: 100%;
-	margin: 0 auto;
+  max-width: 1165px;
+  width: 100%;
+  margin: 0 auto;
 }
 .bg-primary {
-	background-color: rgb(1, 162, 166);
+  background-color: rgb(1, 162, 166);
 }
 .swiper-button-prev,
 .swiper-button-next {
-	display: none !important;
+  display: none !important;
 }
 .banner:hover .swiper-button-prev,
 .swiper-button-next {
-	display: block !important;
-	transition: all ease-in-out 2s;
-	-webkit-transition: all ease-in-out 2s;
-	-moz-transition: all ease-in-out 2s;
-	-ms-transition: all ease-in-out 2s;
-	-o-transition: all ease-in-out 2s;
+  display: block !important;
+  transition: all ease-in-out 2s;
+  -webkit-transition: all ease-in-out 2s;
+  -moz-transition: all ease-in-out 2s;
+  -ms-transition: all ease-in-out 2s;
+  -o-transition: all ease-in-out 2s;
 }
 
 .swiper-button-prev {
-	color: white !important;
+  color: white !important;
 }
 .swiper-button-next {
-	color: white !important;
+  color: white !important;
 }
 .swiper-button-prev:after {
-	font-size: 30px !important;
+  font-size: 30px !important;
 }
 .swiper-button-next:after {
-	font-size: 30px !important;
+  font-size: 30px !important;
 }
 .css-17pwl6t {
-	width: 0 !important;
+  width: min-content !important;
 }
 
 .hover-border {
-	transition: color 0.25s;
-	position: relative;
+  transition: color 0.25s;
+  position: relative;
 }
 
 .hover-border::after,
 .hover-border::before {
-	content: "";
-	position: absolute;
-	border: 2px solid transparent;
-	width: 0;
-	height: 0;
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
 }
 .hover-border::before {
-	top: 0;
-	left: 0;
+  top: 0;
+  left: 0;
 }
 .hover-border::after {
-	bottom: 0;
-	right: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .hover-border:hover::before,
 .hover-border:hover::after {
-	width: 100%;
-	height: 100%;
-	display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .hover-border:hover::before {
-	border-top-color: #f36371;
-	border-right-color: #f36371;
-	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  border-top-color: #f36371;
+  border-right-color: #f36371;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 
 .hover-border:hover::after {
-	border-bottom-color: #f36371;
-	border-left-color: #f36371;
-	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
-		height 0.25s ease-out 0.75s;
+  border-bottom-color: #f36371;
+  border-left-color: #f36371;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
 }
-
-

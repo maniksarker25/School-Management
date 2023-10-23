@@ -9,45 +9,45 @@ import { store } from "@/src/redux/store";
 import DashboardLayout from "@/src/component/core/layout/DashboardLayout";
 import { useRouter } from "next/router";
 const theme = extendTheme({
-	breakpoints: {
-		base: "320px",
-		sm: "640px",
-		md: "768px",
-		lg: "1024px",
-		xl: "1280px",
-	},
-	colors: {
-		primaryColor: {
-			900: "#01A2A6",
-		},
-		secondaryColor: {
-			900: "#F36371",
-		},
-	},
+  breakpoints: {
+    base: "320px",
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+  },
+  colors: {
+    primaryColor: {
+      900: "#01A2A6",
+    },
+    secondaryColor: {
+      900: "#F36371",
+    },
+  },
 
-	space: {
-		1: "70px",
-	},
+  space: {
+    1: "70px",
+  },
 });
 
 export default function App({ Component, pageProps }) {
-	const router = useRouter();
-	const isDashboard = router.asPath.startsWith("/dashboard");
+  const router = useRouter();
+  const isDashboard = router.asPath.startsWith("/dashboard");
 
-	const auth = true;
-	return (
-		<Provider store={store}>
-			<ChakraProvider theme={theme}>
-				{isDashboard && auth ? (
-					<DashboardLayout>
-						<Component {...pageProps} />
-					</DashboardLayout>
-				) : (
-					<Layout>
-						<Component {...pageProps} />
-					</Layout>
-				)}
-			</ChakraProvider>
-		</Provider>
-	);
+  const auth = true;
+  return (
+    <Provider store={store}>
+      {isDashboard && auth ? (
+        <DashboardLayout>
+          <Component {...pageProps} />
+        </DashboardLayout>
+      ) : (
+        <ChakraProvider theme={theme}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ChakraProvider>
+      )}
+    </Provider>
+  );
 }
