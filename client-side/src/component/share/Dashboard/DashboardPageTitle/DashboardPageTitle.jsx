@@ -31,7 +31,7 @@ const DashboardPageTitle = ({title}) => {
 			</Link>
 
 			<Box>
-				<h1 className='text-xl  text-gray-800'>{title}</h1>
+				<h1 className='text-lg  text-gray-800'>{title}</h1>
 			</Box>
 		</Stack>
 	);
