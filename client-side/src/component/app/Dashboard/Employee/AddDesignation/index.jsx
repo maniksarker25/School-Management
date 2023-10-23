@@ -9,7 +9,7 @@ const AddDesignation = () => {
     <div>
       <DashboardPageTitle title={"Add Designation"} />
      <div>
-        <Add/>
+        <Add title={"Add Designation"} label={"Designation Name"} placeholder={"Designation Name"} button={"Save"}/>
      </div>
      <div>
         <DesignationList/>

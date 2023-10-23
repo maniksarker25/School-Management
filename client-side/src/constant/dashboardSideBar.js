@@ -26,11 +26,11 @@ export const sidebar = {
       data: [
         {
           title: "add employee",
-          link: "/dashboard/app-employee",
+          link: "/dashboard/add-employee",
         },
         {
           title: "add department",
-          link: "/dashboard/app-department",
+          link: "/dashboard/add-department",
         },
         {
           title: "add designation",

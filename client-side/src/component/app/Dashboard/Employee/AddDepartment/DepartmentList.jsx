@@ -2,7 +2,7 @@ import React from "react";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import EditNoteOutlinedIcon from '@mui/icons-material/EditNoteOutlined';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
-const DesignationList = () => {
+const DepartmentList = () => {
   return (
     <div className="p-3 shadow-md border-2 mt-12 ">
       <div className="flex gap-2 border-b-gray-500 border-b-2 pb-2">
@@ -41,4 +41,4 @@ const DesignationList = () => {
   );
 };
 
-export default DesignationList;
+export default DepartmentList;
