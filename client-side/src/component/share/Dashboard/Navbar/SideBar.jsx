@@ -1,22 +1,13 @@
 /** @format */
 
 import { sidebar } from "@/src/constant/dashboardSideBar";
-import {
-	Drawer,
-	DrawerBody,
-	DrawerCloseButton,
-	DrawerContent,
-	DrawerHeader,
-	DrawerOverlay,
-	Icon,
-	Text,
-} from "@chakra-ui/react";
+
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-const SideBar = ({ isOpen, onClose }) => {
+import {  useState } from "react";
+const SideBar = () => {
 	const [expand, setExpand] = useState(-1);
 	const userRole = "admin";
 	
@@ -26,39 +17,21 @@ const SideBar = ({ isOpen, onClose }) => {
 		
 	  }
 	return (
-		<Drawer
-			placement={"left"}
-			
-			isOpen={isOpen}
-			isResizable={false}
-			
-		>
-			<DrawerOverlay display={'none'}/>
-			<DrawerContent style={{ width:'250px',zIndex:'0'}}>
-				{/* <
-					cursor={"pointer"}
-					as={ChevronLeftIcon}
-					onClick={()isOpen}
-				/> */}
-				<Icon  as={ChevronLeftIcon} onClick={onClose}/>
-				<DrawerHeader borderBottomWidth='1px'>
-					Basic Drawer
-				</DrawerHeader>
-				<DrawerBody>
+		
 					<ul className=' w-8/12 flex flex-col gap-y-3 '>
 						{userRole === "admin" &&
 							sidebar?.admin?.map((item, index) => (
 								<li key={index} className=" text-lg font-bold capitalize items-c  transition-all duration-500">
 									<div className="flex enter justify-between">
-									{item?.link ? <Link href={item.link}>{item.title}</Link> : <Text display='inline'>{item.title}</Text>}
+									{item?.link ? <Link href={item.link}>{item.title}</Link> : <p >{item.title}</p>}
 									{item.data && expand !== index ? (
-										<Icon  as={ChevronRightIcon}
+										<ChevronRightIcon  
 											className='cursor-pointer'
 											onClick={()=> handleButtonClick(index)}
-											fontSize={30}
+											
 										/>
 									) : item.data ? (
-										<Icon as={ExpandMoreIcon}  cursor='pointer' fontSize={30} onClick={() => setExpand(-1)}/>
+										<ExpandMoreIcon  cursor='pointer'  onClick={() => setExpand(-1)}/>
 										
 									) : ''
 									}
@@ -80,9 +53,7 @@ const SideBar = ({ isOpen, onClose }) => {
 								</li>
 							))}
 					</ul>
-				</DrawerBody>
-			</DrawerContent>
-		</Drawer>
+				
 	);
 };
 
