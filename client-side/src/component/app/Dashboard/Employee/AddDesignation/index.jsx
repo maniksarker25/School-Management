@@ -2,6 +2,7 @@ import DashboardPageTitle from "@/src/component/share/Dashboard/DashboardPageTit
 import React from "react";
 
 import Add from "./Add";
+import DesignationList from "./DesignationList";
 
 const AddDesignation = () => {
   return (
@@ -9,6 +10,9 @@ const AddDesignation = () => {
       <DashboardPageTitle title={"Add Designation"} />
      <div>
         <Add/>
+     </div>
+     <div>
+        <DesignationList/>
      </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import AddIcon from "@mui/icons-material/Add";
 const Add = () => {
     return (
-        <div className="p-3 shadow-md ">
+        <div className="p-3 shadow-md border-2 mt-12 ">
         <div className="flex items-center gap-2 mb-4 border-b-2 border-gray-500 w-full pb-2">
           <AddIcon />
           <h4 className="font-semibold ">Add Designation</h4>
