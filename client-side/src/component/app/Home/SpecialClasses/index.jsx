@@ -37,12 +37,10 @@ const SpecialClasses = () => {
 					<TabPanels className='mt-3'>
 						<TabPanel p={0}>
 							<Grid
-								templateColumns={[
-									"repeat(1, 1fr)",
-									"repeat(2, 1fr)",
-									"repeat(3, 1fr)",
-									"repeat(4, 1fr)",
-								]}
+								templateColumns={{base:"repeat(1, 1fr)",
+									sm:"repeat(2, 1fr)",
+									md:"repeat(3, 1fr)",
+									lg:"repeat(4, 1fr)",}}
 								gap='10'
 							>
 								{SPECIAL_CLASS_INFO.map(item => {
