@@ -126,6 +126,8 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
           </Typography>
         </Toolbar>
       </AppBar>
+
+
       <Drawer variant="permanent" open={open} sx={{display: !open&&'none'}}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
@@ -138,7 +140,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
         
        
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3,mt:10 }}>
+      <Box component="main" sx={{ flexGrow: 1, mt:'65px' }}>
         {children}
       </Box>
     </Box>
