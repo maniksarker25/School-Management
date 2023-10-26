@@ -10,7 +10,7 @@ body {
   background-color: #f1f1f1;
   font-family: "Poppins", sans-serif;
 }
-
+ /* simple comment  */
 .contain {
   max-width: 1165px;
   width: 100%;
@@ -18,6 +18,9 @@ body {
 }
 .bg-primary {
   background-color: rgb(1, 162, 166);
+}
+.btn-primary{
+  @apply rounded-md text-white font-semibold bg-[#01A2A6]
 }
 .swiper-button-prev,
 .swiper-button-next {

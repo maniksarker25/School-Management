@@ -20,6 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { createTheme } from '@mui/material/styles';
 import SideBar from '../../share/Dashboard/Navbar/SideBar';
+import Profile from '../../share/Dashboard/Navbar/Profile';
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -72,6 +73,7 @@ const AppBar = styled(MuiAppBar, {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+   
   }),
 }));
 
@@ -107,10 +109,11 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
+      <AppBar position="fixed"  open={open} sx={{background:'black',boxShadow:'none'}}>
+        <Box className='flex justify-between mx-10'>
           <IconButton
-            color="inherit"
+            color="white"
+            
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
@@ -119,12 +122,11 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
               ...(open && { display: 'none' }),
             }}
           >
-            <MenuIcon />
+            <MenuIcon  sx={{color:'white'}}/>
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Mini variant drawer
-          </Typography>
-        </Toolbar>
+            <div ></div>
+          <Profile/>
+        </Box>
       </AppBar>
       <Drawer variant="permanent" open={open} sx={{display: !open&&'none'}}>
         <DrawerHeader>

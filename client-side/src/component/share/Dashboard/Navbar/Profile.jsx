@@ -1,19 +1,23 @@
-import { Avatar, Box, Flex, Text } from '@chakra-ui/react';
-import React from 'react';
+import { Avatar, Box, Stack, Typography } from "@mui/material";
 
 const Profile = () => {
     return (
-        <div>
-            <Flex>
+        <div className="">
+            <Stack flexDirection={'row'} gap={2} py={1}>
                 
                 <Box mr='3'>
-                    <Text fontWeight='bold'>
+                    <Typography color='white' fontWeight='bold'>
                         Segun Adebayo
-                    </Text>
-                    <Text fontSize='sm'>UI Engineer</Text>
+                    </Typography>
+                    <Typography color='white' fontSize='sm'>UI Engineer</Typography>
                 </Box>
-                <Avatar src='https://bit.ly/sage-adebayo' />
-            </Flex>
+               
+                <Avatar
+  alt="Remy Sharp"
+  src="https://bit.ly/sage-adebayo"
+  sx={{ width: 56, height: 56 }}
+/>
+            </Stack>
         </div>
     );
 };

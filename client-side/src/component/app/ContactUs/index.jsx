@@ -1,15 +1,14 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import ContactInformation from "./ContactInformation";
+import OnlineApplication from "../OnlineApplicaiton";
+import PageHeader from "../../share/UI/PageHeader";
 
 const ContactUs = () => {
   return (
     <div>
-      <div className="bg-primary py-6">
-        <div className="text-white  flex justify-between contain">
-          <h4 className="text-2xl ">Contacts</h4>
-          <p>Home/Contact</p>
-        </div>
+      <div className="hidden md:block">
+       <PageHeader pageName={"Contact"}/>
       </div>
 
         <iframe

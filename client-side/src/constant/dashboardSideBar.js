@@ -1,15 +1,16 @@
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';import WcIcon from '@mui/icons-material/Wc';
+import EventIcon from '@mui/icons-material/Event';
 export const sidebar = {
   admin: [
-    {
-      title: "employ",
-      link: "/dashboard/employ",
-    },
+    
     {
       title: "student",
+      icon: <WcIcon/>,
       link: "/all-student",
     },
     {
       title: "event",
+      icon: <EventIcon/>,
       data: [
         {
           title: "Add Event",
@@ -23,6 +24,7 @@ export const sidebar = {
     },
     {
       title: "employ",
+      icon: <PeopleOutlineIcon/>,
       data: [
         {
           title: "add employee",
@@ -38,9 +40,6 @@ export const sidebar = {
         },
       ],
     },
-    {
-      title: "student",
-      link: "/all-student",
-    },
+    
   ],
 };
