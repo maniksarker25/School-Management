@@ -57,6 +57,36 @@ export const sidebar = {
         
       ],
     },
+    {
+      title: "classes",
+      icon: <HomeOutlinedIcon/>,
+      data: [
+        {
+          title: "teacher schedule",
+          link: "/dashboard/teacher-schedule",
+        },
+        {
+          title: "promotion",
+          link: "/dashboard/promotion",
+        }
+        
+      ],
+    },
+    {
+      title: "subjects",
+      icon: <HomeOutlinedIcon/>,
+      data: [
+        {
+          title: "teacher schedule",
+          link: "/dashboard/teacher-schedule",
+        },
+        {
+          title: "promotion",
+          link: "/dashboard/promotion",
+        }
+        
+      ],
+    },
     
   ],
 };
