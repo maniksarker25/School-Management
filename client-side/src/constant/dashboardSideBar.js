@@ -1,5 +1,7 @@
-import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';import WcIcon from '@mui/icons-material/Wc';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
+import WcIcon from '@mui/icons-material/Wc';
 import EventIcon from '@mui/icons-material/Event';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 export const sidebar = {
   admin: [
     
@@ -38,6 +40,21 @@ export const sidebar = {
           title: "add designation",
           link: "/dashboard/add-designation",
         },
+      ],
+    },
+    {
+      title: "academic",
+      icon: <HomeOutlinedIcon/>,
+      data: [
+        {
+          title: "teacher schedule",
+          link: "/dashboard/teacher-schedule",
+        },
+        {
+          title: "promotion",
+          link: "/dashboard/promotion",
+        }
+        
       ],
     },
     
