@@ -1,17 +1,17 @@
 import { LatestNewsData } from "@/src/constant/LatestNewsData";
 import LatestNewsCards from "./LatestNewsCards";
 import Categories from "./Categories";
+import PageHeader from "../../share/UI/PageHeader";
 
 const LatestNews = () => {
     return (
         <div>
-            <div className="bg-[#01A2A6] py-5 flex items-center justify-between">
-                <h1 className="md:px-24 text-3xl text-white">Category: Latest News</h1>
-                <h1 className="md:px-24 text-sm text-white">Home/advice</h1>
+            <div>
+                <PageHeader pageName={"Latest News"} />
             </div>
 
             <div className="contain">
-                <div className='grid md:grid-cols-3 gap-20 mt-11 mb-11'>
+                <div className='grid md:grid-cols-3 gap-20 mt-11 mb-11 px-3 lg:px-0'>
 
                     {/* news cards */}
                     <div className="md:col-span-2">
