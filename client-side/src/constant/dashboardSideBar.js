@@ -1,5 +1,7 @@
-import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';import WcIcon from '@mui/icons-material/Wc';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
+import WcIcon from '@mui/icons-material/Wc';
 import EventIcon from '@mui/icons-material/Event';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 export const sidebar = {
   admin: [
     
@@ -14,11 +16,11 @@ export const sidebar = {
       data: [
         {
           title: "Add Event",
-          link: "/dashboard/add-event",
+          link: "/dashboard/event/add-event",
         },
         {
           title: "Manage Event",
-          link: "/dashboard/manage-event",
+          link: "/dashboard/event/manage-event",
         },
       ],
     },
@@ -44,6 +46,53 @@ export const sidebar = {
         },
       ],
     },
+    {
+      title: "academic",
+      icon: <HomeOutlinedIcon/>,
+      data: [
+        {
+          title: "teacher schedule",
+          link: "/dashboard/teacher-schedule",
+        },
+        {
+          title: "promotion",
+          link: "/dashboard/promotion",
+        }
+        
+      ],
+    },
+    {
+      title: "classes",
+      icon: <HomeOutlinedIcon/>,
+      data: [
+        {
+          title: "teacher schedule",
+          link: "/dashboard/teacher-schedule",
+        },
+        {
+          title: "promotion",
+          link: "/dashboard/promotion",
+        }
+        
+      ],
+    },
+    {
+      title: "subjects",
+      icon: <HomeOutlinedIcon/>,
+      data: [
+        {
+          title: "teacher schedule",
+          link: "/dashboard/teacher-schedule",
+        },
+        {
+          title: "promotion",
+          link: "/dashboard/promotion",
+        }
+        
+      ],
+    },
     
   ],
+	
+
 };

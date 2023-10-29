@@ -2,15 +2,21 @@
 
 import PageTitle from "@/src/component/share/page-title/PageTitle";
 import { Box, Grid, GridItem, Stack } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import Events from "./Events";
 import Notices from "./Notices";
 import BigBtn from "@/src/component/share/UI/BigBtn";
 import { EVENTS_INFO } from "@/src/constant/events";
 import { NOTICE_INFO } from "@/src/constant/notice";
 import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { getEvents } from "@/src/redux/feture/eventsSlice";
 
 const NoticeEvents = () => {
+	const events = useSelector(state =>
+		state.eventsSlice.filter(item => item.isShow)
+	);
+
 	return (
 		<div className='mt-[70px]'>
 			<Box className='contain'>
@@ -31,7 +37,7 @@ const NoticeEvents = () => {
 						<Box mb={6}>
 							<PageTitle title={"Recent and Upcoming Events"} />
 						</Box>
-						<Events data={EVENTS_INFO.slice(0, 2)} />
+						<Events data={events.slice(0, 2)} />
 						<Box className='mt-8 text-center'>
 							<Link href={"/events"}>
 								<BigBtn title={"View All Events"} />

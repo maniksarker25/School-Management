@@ -43,7 +43,7 @@ const Testimonial = () => {
             className="mySwiper"
           >
             {testimonials?.map((testimonial, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 {" "}
                 <div className="flex flex-col items-center">
                   <div className="relative w-36 h-36 border-2 border-[#01A2A6] p-4 rounded-full">

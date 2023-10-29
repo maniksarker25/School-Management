@@ -38,8 +38,9 @@ export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       {isDashboard && auth ? (
-        <DashboardLayout>
+        <DashboardLayout >
           <Component {...pageProps} />
+          
         </DashboardLayout>
       ) : (
         <ChakraProvider theme={theme}>

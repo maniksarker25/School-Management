@@ -1,6 +1,5 @@
 import DashboardPageTitle from "@/src/component/share/Dashboard/DashboardPageTitle/DashboardPageTitle";
 import React from "react";
-
 import Add from "./Add";
 import DesignationList from "./DesignationList";
 

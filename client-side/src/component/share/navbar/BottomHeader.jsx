@@ -13,6 +13,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { useEffect, useState } from "react";
 
 const BottomHeader = () => {
   const router = useRouter();
@@ -20,13 +21,14 @@ const BottomHeader = () => {
   const handleClick = () => {
     onOpen();
   };
+
   return (
-    <div className="py-8 contain flex justify-between items-center ">
-      <Link href="/" className="text-2xl font-bold">
-        School{" "}
+    <div className={`py-8 contain flex justify-between items-center`}>
+      <Link href="/" className="text-2xl font-semibold">
+        <span className="text-[#01A2A6]"> Nexus</span> School{" "}
       </Link>
 
-      <Box display={{ base:'none',lg:'flex'}} gap={3}>
+      <Box display={{ base: "none", lg: "flex" }} gap={3}>
         {navItem.map((item, index) => (
           <Link
             className={`text-lg transition-all duration-300 hover:text-[#64A2A6] ${
@@ -42,7 +44,7 @@ const BottomHeader = () => {
         ))}
       </Box>
       <Icon
-        display={["block", 'block', "block", "none"]}
+        display={["block", "block", "block", "none"]}
         onClick={handleClick}
         cursor="pointer"
         fontSize={30}
