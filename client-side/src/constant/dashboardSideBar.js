@@ -16,11 +16,11 @@ export const sidebar = {
       data: [
         {
           title: "Add Event",
-          link: "/dashboard/add-event",
+          link: "/dashboard/event/add-event",
         },
         {
           title: "Manage Event",
-          link: "/dashboard/manage-event",
+          link: "/dashboard/event/manage-event",
         },
       ],
     },
@@ -89,4 +89,6 @@ export const sidebar = {
     },
     
   ],
+	
+
 };

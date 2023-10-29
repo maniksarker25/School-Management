@@ -40,6 +40,7 @@ export default function App({ Component, pageProps }) {
       {isDashboard && auth ? (
         <DashboardLayout >
           <Component {...pageProps} />
+          
         </DashboardLayout>
       ) : (
         <ChakraProvider theme={theme}>

@@ -1,15 +1,21 @@
-import DashboardLayout from '@/src/component/core/layout/DashboardLayout';
-import DashboardPageTitle from '@/src/component/share/Dashboard/DashboardPageTitle/DashboardPageTitle';
-import { Box } from '@chakra-ui/react';
-import React from 'react';
+/** @format */
+
+import DashboardLayout from "@/src/component/core/layout/DashboardLayout";
+import DashboardPageTitle from "@/src/component/share/Dashboard/DashboardPageTitle/DashboardPageTitle";
+import { fetchEvents } from "@/src/redux/feture/eventsSlice";
+import { Box } from "@mui/material";
+
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 const Dashboard = () => {
-    return (
+	
+	return (
 		<Box>
 			<Box>
 				<DashboardPageTitle title={"Dashboard"} />
 			</Box>
-			<p>this is dashboard mane file </p>
+			<Box padding={3}>tjis is</Box>
 		</Box>
 	);
 };

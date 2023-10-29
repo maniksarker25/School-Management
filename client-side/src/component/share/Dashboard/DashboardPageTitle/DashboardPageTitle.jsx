@@ -7,7 +7,7 @@ import Link from "next/link";
 const DashboardPageTitle = ({title}) => {
 	return (
 		<Stack
-			py={2}
+			py={3}
 			px={4}
 			bg={"#F1F1F1"}
 			display={"flex"}
@@ -31,7 +31,7 @@ const DashboardPageTitle = ({title}) => {
 			</Link>
 
 			<Box>
-				<h1 className='text-xl  text-gray-800'>{title}</h1>
+				<h1 className='text-base  text-gray-800'>{title}</h1>
 			</Box>
 		</Stack>
 	);

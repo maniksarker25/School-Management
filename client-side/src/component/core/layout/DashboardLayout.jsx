@@ -107,7 +107,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <div style={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed"  open={open} sx={{background:'black',boxShadow:'none'}}>
         <Box className='flex justify-between mx-10'>
@@ -128,6 +128,8 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
           <Profile/>
         </Box>
       </AppBar>
+
+
       <Drawer variant="permanent" open={open} sx={{display: !open&&'none'}}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
@@ -140,10 +142,12 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
         
        
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3,mt:10 }}>
+      <main  className='flex-grow-[1] mt-[65px]' >
         {children}
-      </Box>
-    </Box>
+       
+      </main>
+    </div>
+    
   );
 }
 export default DashboardLayout
