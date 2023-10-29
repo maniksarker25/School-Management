@@ -21,7 +21,7 @@ const BottomHeader = () => {
     onOpen();
   };
   return (
-    <div className="py-8 contain flex justify-between items-center">
+    <div className="py-8 contain flex justify-between items-center ">
       <Link href="/" className="text-2xl font-bold">
         School{" "}
       </Link>
