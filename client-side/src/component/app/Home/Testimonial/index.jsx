@@ -43,7 +43,7 @@ const Testimonial = () => {
             className="mySwiper"
           >
             {testimonials?.map((testimonial, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 {" "}
                 <div className="flex flex-col items-center">
                   <div className="relative w-36 h-36 border-2 border-[#01A2A6] p-4 rounded-full">
@@ -57,7 +57,7 @@ const Testimonial = () => {
                   <div
                     className={`text-center mt-6 border-t-2 border-x-2 border-[#01A2A6] rounded-t-lg  ${cardAfter} relative after:left-[48%] after:-top-[11.5px]`}
                   >
-                    <p className="mt-4 px-2">{testimonial?.description}</p>
+                    <p className="mt-4 px-2">{testimonial?.description.slice(0,100)}..</p>
                     <h4 className="text-xl mt-3 ">{testimonial?.name}</h4>
                   </div>
                 </div>

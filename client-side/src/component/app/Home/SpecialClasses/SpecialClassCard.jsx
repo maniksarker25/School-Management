@@ -14,6 +14,7 @@ const ClassCard = ({ item }) => {
 		<Card
 			maxW='sm'
 			height={"100%"}
+			className='hover-border'
 		>
 			<CardBody
 				display={"flex"}

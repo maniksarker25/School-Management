@@ -20,13 +20,14 @@ const BannerSlider = () => {
         pagination={{
           clickable: true,
         }}
+        speed={1200}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
       {/* slider */}
         <SwiperSlide>
-          <div className="bg-[url('https://language-school.cmsmasters.net/wp-content/uploads/2016/01/home-bg-6.jpg')] h-[500px] md:[550px] lg:h-[580px] xl:h-[680px]  bg-no-repeat w-full bg-cover bg-center">
+          <div className="bg-[url('https://language-school.cmsmasters.net/wp-content/uploads/2016/01/home-bg-6.jpg')] h-[450px] md:[550px] lg:h-[580px] xl:h-[680px]  bg-no-repeat w-full bg-cover bg-center">
             <div className="contain text-white pt-28  md:pt-36  lg:pt-40 2xl:pt-56 px-3 md:px-16 lg:px-24 xl:px-32 2xl:px-0">
               <div>
                 <div className=" w-full  lg:w-3/4 xl:w-2/4 text-white">

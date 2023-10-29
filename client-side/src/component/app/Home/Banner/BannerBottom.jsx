@@ -6,7 +6,7 @@ import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
 const BannerBottom = () => {
   return (
     <div style={{ backgroundColor: "#01A2A6" }}>
-      <div className="contain  md:flex justify-between">
+      <div className="contain  md:flex justify-between px-4 lg:px-0 ">
         <div className="text-white py-12 text-center md:text-left">
           <MailOutlineIcon sx={{color:"white",fontSize:"45px"}}/>
           <h4 className="mt-6 text-2xl mb-1.5" style={{color:"rgb(255,241,155)"}}>Get Quote</h4>

@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
@@ -8,14 +10,17 @@ body {
   background-color: #f1f1f1;
   font-family: "Poppins", sans-serif;
 }
-
+ /* simple comment  */
 .contain {
   max-width: 1165px;
   width: 100%;
   margin: 0 auto;
 }
-.bg-primary{
-  background-color: rgb(1,162,166);
+.bg-primary {
+  background-color: rgb(1, 162, 166);
+}
+.btn-primary{
+  @apply rounded-md text-white font-semibold bg-[#01A2A6]
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -42,4 +47,61 @@ body {
 }
 .swiper-button-next:after {
   font-size: 30px !important;
+}
+.css-17pwl6t {
+  width: min-content !important;
+}
+
+.hover-border {
+  transition: color 0.25s;
+  position: relative;
+}
+
+.hover-border::after,
+.hover-border::before {
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.hover-border::before {
+  top: 0;
+  left: 0;
+}
+.hover-border::after {
+  bottom: 0;
+  right: 0;
+}
+
+.hover-border:hover::before,
+.hover-border:hover::after {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hover-border:hover::before {
+  border-top-color: #f36371;
+  border-right-color: #f36371;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.hover-border:hover::after {
+  border-bottom-color: #f36371;
+  border-left-color: #f36371;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+.react-datepicker-wrapper{
+  width: 100% !important;
+}
+.react-datepicker__input-container{
+  width: 100% !important;
+}
+
+/* class for input field  */
+.nice-input{
+  @apply outline-none border  border-gray-300 py-1 px-2 rounded focus:shadow-[0_0_0px_1px_#01a3a633] focus:border-[#01a3a663] duration-300 placeholder:text-[14px] w-full
 }
