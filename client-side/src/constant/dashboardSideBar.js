@@ -27,6 +27,10 @@ export const sidebar = {
       icon: <PeopleOutlineIcon/>,
       data: [
         {
+          title:"employee list",
+          link:"/dashboard/employee-list"
+        },
+        {
           title: "add employee",
           link: "/dashboard/add-employee",
         },

@@ -49,13 +49,13 @@ const OnlineApplication = () => {
         <h4 className="text-center text-3xl my-12">
           Read Carefully About Admission Process
         </h4>
-        <div className="contain mt-24">
-          <div className="flex  gap-12">
+        <div className="contain mt-24 px-4 lg:px-0">
+          <div className="lg:flex  gap-12">
             <div>
               <Stepper
                 index={activeStep}
                 orientation="vertical"
-                height="400px"
+                // height="400px"
                 width={"100%"}
                 gap="0"
               >
@@ -79,7 +79,7 @@ const OnlineApplication = () => {
                 ))}
               </Stepper>
             </div>
-            <div>
+            <div className="hidden lg:block">
                 <img className="h-full" src="https://i.ibb.co/MCr0Spn/how-to-fill-in-an-application-form-compressor.webp" alt="" />
             </div>
           </div>

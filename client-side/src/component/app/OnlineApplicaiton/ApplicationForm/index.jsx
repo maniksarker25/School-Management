@@ -12,6 +12,7 @@ const ApplicationForm = () => {
   };
   return (
     <div className="contain">
+      <div className="px-4 lg:px-0"> 
       <h4 className="text-3xl text-[#01A2A6]">Make An Online Admission</h4>
       <p>
         Welcome to our comprehensive online admission process, your gateway to
@@ -19,6 +20,7 @@ const ApplicationForm = () => {
         important journey with confidence as we guide you through the steps to
         complete your application.
       </p>
+      </div>
       <div className="mt-12 border-2 p-6 rounded">
         <form onSubmit={handleOnlineAdmission}>
           <div className="flex items-center ">

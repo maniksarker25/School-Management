@@ -20,6 +20,7 @@ const BannerSlider = () => {
         pagination={{
           clickable: true,
         }}
+        speed={1200}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
